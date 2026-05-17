@@ -67,68 +67,61 @@ export default function LandingPage() {
       </section>
 
       {/* THE CORE ECOSYSTEM HUB */}
-      <section id="ecosystem" className="w-full bg-brand-text text-brand-bg py-16 px-6 border-y border-brand-card/10">
-        <div className="max-w-7xl mx-auto">
+      <section id="ecosystem" className="py-16 bg-brand-card/30 border-y border-brand-card/40 px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">The Infrastructure</h2>
+          <p className="text-brand-text/60 max-w-md mx-auto text-sm">Custom production environments engineered to manage intra-day risk execution.</p>
+        </div>
 
-          {/* SECTION HEADER (Inverted to Dark Navy text) */}
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">The Infrastructure</h2>
-            <p className="text-brand-bg/60 max-w-md mx-auto text-sm">
-              Custom production environments engineered to manage intra-day risk execution.
-            </p>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* TRADER EYE CARD */}
+          <div className="p-8 bg-brand-card border border-brand-card/40 rounded-lg flex flex-col justify-between shadow-xl">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="font-mono text-xs text-brand-accent tracking-widest uppercase">Subdomain 01</span>
+                <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">TraderEye Logs</h3>
+              <p className="text-sm text-brand-text/70 leading-relaxed mb-6">
+                Radical transparency in action. A live performance dashboard displaying unedited trade metrics, execution targets, and systematic performance data straight from the terminal.
+              </p>
+            </div>
+            <a
+              href="https://tradereye.candlesbeforecubicles.com"
+              className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-sm font-semibold border border-brand-card hover:border-brand-accent/50 transition-all"
+            >
+              <span>Explore Trade Ledger</span>
+              <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
+            </a>
           </div>
 
-          {/* GRID CONTAINER */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-            {/* TRADER EYE CARD (Refactored to crisp White base with Dark text) */}
-            <div className="p-8 bg-white border border-brand-bg/10 rounded-lg flex flex-col justify-between shadow-md">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs text-brand-accent font-bold tracking-widest uppercase">Subdomain 01</span>
-                  <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-brand-bg">TraderEye Logs</h3>
-                <p className="text-sm text-brand-bg/70 leading-relaxed mb-6">
-                  Radical transparency in action. A live performance dashboard displaying unedited trade metrics, execution targets, and systematic performance data straight from the terminal.
-                </p>
+          {/* TRADE ASSISTANT CARD */}
+          <div className="p-8 bg-brand-card border border-brand-card/40 rounded-lg flex flex-col justify-between shadow-xl">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="font-mono text-xs text-brand-accent tracking-widest uppercase">Subdomain 02</span>
+                <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
               </div>
-              <a
-                href="https://tradereye.candlesbeforecubicles.com"
-                className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-brand-text text-sm font-semibold hover:bg-brand-bg/90 transition-all"
-              >
-                <span>Explore Trade Ledger</span>
-                <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
-              </a>
+              <h3 className="text-xl font-bold mb-3">Trade Assistant Engine</h3>
+              <p className="text-sm text-brand-text/70 leading-relaxed mb-6">
+                Removing cognitive load during active execution. A high-speed math block interface designed to calculate optimal risk variables instantly and process one-click scaling entries seamlessly.
+              </p>
             </div>
-
-            {/* TRADE ASSISTANT CARD (Refactored to crisp White base with Dark text) */}
-            <div className="p-8 bg-white border border-brand-bg/10 rounded-lg flex flex-col justify-between shadow-md">
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs text-brand-accent font-bold tracking-widest uppercase">Subdomain 02</span>
-                  <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 text-brand-bg">Trade Assistant Engine</h3>
-                <p className="text-sm text-brand-bg/70 leading-relaxed mb-6">
-                  Removing cognitive load during active execution. A high-speed math block interface designed to calculate optimal risk variables instantly and process one-click scaling entries seamlessly.
-                </p>
-              </div>
-              <a
-                href="https://trade-assistant.candlesbeforecubicles.com"
-                className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-brand-text text-sm font-semibold hover:bg-brand-bg/90 transition-all"
-              >
-                <span>Launch Execution Tool</span>
-                <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
-              </a>
-            </div>
-
+            <a
+              href="https://trade-assistant.candlesbeforecubicles.com"
+              className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-sm font-semibold border border-brand-card hover:border-brand-accent/50 transition-all"
+            >
+              <span>Launch Execution Tool</span>
+              <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
+            </a>
           </div>
         </div>
+        {/* Subtle decorative background grid to anchor the technical feeling */}
+        {/* <div className="absolute inset-0 bg-[linear-gradient(to_right,#16222f_1px,transparent_1px),linear-gradient(to_bottom,#16222f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25 pointer-events-none" /> */}
       </section>
 
       {/* TRADING PHILOSOPHY MATRICES */}
-      <section id="philosophy" className="py-16 bg-brand-card/30 border-y border-brand-card/40 px-6">
+      <section id="philosophy" className="py-16 px-6 max-w-7xl mx-auto">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">System Architecture</h2>
@@ -161,45 +154,66 @@ export default function LandingPage() {
       </section>
 
       {/* THE SHIFT / CALL TO CONTENT HUB */}
-      <section id="journey" className="py-20 px-6 max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-12 gap-12 items-center">
-          <div className="md:col-span-7">
-            <span className="font-mono text-xs text-brand-accent tracking-widest uppercase block mb-3">The Origin Story</span>
-            <h2 className="text-3xl font-bold tracking-tight mb-6">From Code base to Capital allocation.</h2>
-            <p className="text-brand-text/80 text-sm leading-relaxed mb-4">
-              As a backend developer, I spent my career architecture-testing systems to guarantee predictive scale. When I stepped into live markets, I quickly realized most standard educational spaces treat trading like a lottery instead of a structured probability challenge.
-            </p>
-            <p className="text-brand-text/80 text-sm leading-relaxed mb-6">
-              <strong>Candles Before Cubicles</strong> documents that exact structural pivot. I treat the market terminal as a raw computation environment—using technical precision, algorithmic parameters, and rule-based entries to transition cleanly out of the corporate 9-to-5 loop.
-            </p>
-            <div className="flex items-center space-x-4">
-              <a href="https://youtube.com/@CandlesBeforeCubicles" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-data-red text-brand-text font-semibold rounded text-xs tracking-wider uppercase hover:bg-data-red/90 transition-colors">
-                Watch on YouTube
-              </a>
-              <a href="https://instagram.com/CandlesBeforeCubicles" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-brand-card border border-brand-card text-brand-text font-semibold rounded text-xs tracking-wider uppercase hover:border-brand-accent/40 transition-colors">
-                Follow Instagram Diary
-              </a>
-            </div>
-          </div>
-          <div className="md:col-span-5 bg-brand-card/40 border border-brand-card/30 rounded-lg p-6 font-mono text-xs text-brand-text/50 shadow-inner">
-            <div className="flex items-center justify-between border-b border-brand-card/60 pb-3 mb-4">
-              <span className="text-data-green">● execution_policy.json</span>
-              <span>v1.2.0</span>
-            </div>
-            <p className="text-brand-accent mb-2">{"{"}</p>
-            <p className="pl-4">&quot;strategy&quot;: &quot;Intraday Trend Shorting&quot;,</p>
-            <p className="pl-4">&quot;base_interval&quot;: &quot;10_Minute_Chart&quot;,</p>
-            <p className="pl-4">&quot;risk_per_trade_pct&quot;: 1.0,</p>
-            <p className="pl-4">&quot;stop_mechanism&quot;: &quot;ATR_Volatility_Derived&quot;,</p>
-            <p className="pl-4">&quot;execution_friction&quot;: &quot;Eliminated_Via_TradeAssistant&quot;,</p>
-            <p className="pl-4">&quot;transparency_ledger&quot;: &quot;Live_TraderEye_Sync&quot;</p>
-            <p className="text-brand-accent mt-2">{"}"}</p>
-          </div>
+      <section id="journey" className="w-full bg-brand-card/30 border-y border-brand-card/40 py-20 px-6">
+  <div className="max-w-5xl mx-auto">
+    <div className="grid md:grid-cols-12 gap-12 items-center">
+      
+      {/* LEFT COLUMN: THE NARRATIVE */}
+      <div className="md:col-span-7">
+        <span className="font-mono text-xs text-brand-accent tracking-widest uppercase block mb-3">
+          The Origin Story
+        </span>
+        <h2 className="text-3xl font-bold tracking-tight mb-6">
+          From Code base to Capital allocation.
+        </h2>
+        <p className="text-brand-text/80 text-sm leading-relaxed mb-4">
+          As a backend developer, I spent my career architecture-testing systems to guarantee predictive scale. When I stepped into live markets, I quickly realized most standard educational spaces treat trading like a lottery instead of a structured probability challenge.
+        </p>
+        <p className="text-brand-text/80 text-sm leading-relaxed mb-6">
+          <strong>Candles Before Cubicles</strong> documents that exact structural pivot. I treat the market terminal as a raw computation environment—using technical precision, algorithmic parameters, and rule-based entries to transition cleanly out of the corporate 9-to-5 loop.
+        </p>
+        <div className="flex items-center space-x-4">
+          <a 
+            href="https://youtube.com/@CandlesBeforeCubicles" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="px-5 py-2.5 bg-data-red text-brand-text font-semibold rounded text-xs tracking-wider uppercase hover:bg-data-red/90 transition-colors"
+          >
+            Watch on YouTube
+          </a>
+          <a 
+            href="https://instagram.com/CandlesBeforeCubicles" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="px-5 py-2.5 bg-brand-card border border-brand-card text-brand-text font-semibold rounded text-xs tracking-wider uppercase hover:border-brand-accent/40 transition-colors"
+          >
+            Follow Instagram Diary
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* RIGHT COLUMN: THE TERMINAL CONFIG CODE BLOCK */}
+      <div className="md:col-span-5 bg-brand-card/40 border border-brand-card/30 rounded-lg p-6 font-mono text-xs text-brand-text/50 shadow-inner">
+        <div className="flex items-center justify-between border-b border-brand-card/60 pb-3 mb-4">
+          <span className="text-data-green">● execution_policy.json</span>
+          <span>v1.2.0</span>
+        </div>
+        <p className="text-brand-accent mb-2">{"{"}</p>
+        <p className="pl-4">&quot;strategy&quot;: &quot;Intraday Trend Shorting&quot;,</p>
+        <p className="pl-4">&quot;base_interval&quot;: &quot;10_Minute_Chart&quot;,</p>
+        <p className="pl-4">&quot;risk_per_trade_pct&quot;: 1.0,</p>
+        <p className="pl-4">&quot;stop_mechanism&quot;: &quot;ATR_Volatility_Derived&quot;,</p>
+        <p className="pl-4">&quot;execution_friction&quot;: &quot;Eliminated_Via_TradeAssistant&quot;,</p>
+        <p className="pl-4">&quot;transparency_ledger&quot;: &quot;Live_TraderEye_Sync&quot;</p>
+        <p className="text-brand-accent mt-2">{"}"}</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* SYSTEM ARCHITECTURE LEAD CAPTURE */}
-      <section className="bg-brand-card/20 border-t border-brand-card/40 py-16 px-6">
+      <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="max-w-md mx-auto text-center">
           <h3 className="text-xl font-bold mb-2">Track the Code Shift</h3>
           <p className="text-sm text-brand-text/60 mb-6">Get a direct digest detailing strategic asset updates, weekly trade metrics, and system optimizations.</p>
