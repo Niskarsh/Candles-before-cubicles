@@ -67,53 +67,62 @@ export default function LandingPage() {
       </section>
 
       {/* THE CORE ECOSYSTEM HUB */}
-      <section id="ecosystem" className="py-16 px-6 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">The Infrastructure</h2>
-          <p className="text-brand-text/60 max-w-md mx-auto text-sm">Custom production environments engineered to manage intra-day risk execution.</p>
-        </div>
+      <section id="ecosystem" className="w-full bg-brand-text text-brand-bg py-16 px-6 border-y border-brand-card/10">
+        <div className="max-w-7xl mx-auto">
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* TRADER EYE CARD */}
-          <div className="p-8 bg-brand-card border border-brand-card/40 rounded-lg flex flex-col justify-between shadow-xl">
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs text-brand-accent tracking-widest uppercase">Subdomain 01</span>
-                <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">TraderEye Logs</h3>
-              <p className="text-sm text-brand-text/70 leading-relaxed mb-6">
-                Radical transparency in action. A live performance dashboard displaying unedited trade metrics, execution targets, and systematic performance data straight from the terminal.
-              </p>
-            </div>
-            <a
-              href="https://tradereye.candlesbeforecubicles.com"
-              className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-sm font-semibold border border-brand-card hover:border-brand-accent/50 transition-all"
-            >
-              <span>Explore Trade Ledger</span>
-              <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
-            </a>
+          {/* SECTION HEADER (Inverted to Dark Navy text) */}
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">The Infrastructure</h2>
+            <p className="text-brand-bg/60 max-w-md mx-auto text-sm">
+              Custom production environments engineered to manage intra-day risk execution.
+            </p>
           </div>
 
-          {/* TRADE ASSISTANT CARD */}
-          <div className="p-8 bg-brand-card border border-brand-card/40 rounded-lg flex flex-col justify-between shadow-xl">
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs text-brand-accent tracking-widest uppercase">Subdomain 02</span>
-                <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
+          {/* GRID CONTAINER */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            {/* TRADER EYE CARD (Refactored to crisp White base with Dark text) */}
+            <div className="p-8 bg-white border border-brand-bg/10 rounded-lg flex flex-col justify-between shadow-md">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-xs text-brand-accent font-bold tracking-widest uppercase">Subdomain 01</span>
+                  <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-brand-bg">TraderEye Logs</h3>
+                <p className="text-sm text-brand-bg/70 leading-relaxed mb-6">
+                  Radical transparency in action. A live performance dashboard displaying unedited trade metrics, execution targets, and systematic performance data straight from the terminal.
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3">Trade Assistant Engine</h3>
-              <p className="text-sm text-brand-text/70 leading-relaxed mb-6">
-                Removing cognitive load during active execution. A high-speed math block interface designed to calculate optimal risk variables instantly and process one-click scaling entries seamlessly.
-              </p>
+              <a
+                href="https://tradereye.candlesbeforecubicles.com"
+                className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-brand-text text-sm font-semibold hover:bg-brand-bg/90 transition-all"
+              >
+                <span>Explore Trade Ledger</span>
+                <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
+              </a>
             </div>
-            <a
-              href="https://trade-assistant.candlesbeforecubicles.com"
-              className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-sm font-semibold border border-brand-card hover:border-brand-accent/50 transition-all"
-            >
-              <span>Launch Execution Tool</span>
-              <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
-            </a>
+
+            {/* TRADE ASSISTANT CARD (Refactored to crisp White base with Dark text) */}
+            <div className="p-8 bg-white border border-brand-bg/10 rounded-lg flex flex-col justify-between shadow-md">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-xs text-brand-accent font-bold tracking-widest uppercase">Subdomain 02</span>
+                  <span className="w-2 h-2 rounded-full bg-data-green animate-pulse" />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-brand-bg">Trade Assistant Engine</h3>
+                <p className="text-sm text-brand-bg/70 leading-relaxed mb-6">
+                  Removing cognitive load during active execution. A high-speed math block interface designed to calculate optimal risk variables instantly and process one-click scaling entries seamlessly.
+                </p>
+              </div>
+              <a
+                href="https://trade-assistant.candlesbeforecubicles.com"
+                className="group flex items-center justify-between w-full py-3 px-4 rounded bg-brand-bg text-brand-text text-sm font-semibold hover:bg-brand-bg/90 transition-all"
+              >
+                <span>Launch Execution Tool</span>
+                <span className="text-brand-accent group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
